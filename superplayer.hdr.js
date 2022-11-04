@@ -2752,17 +2752,20 @@
             ))
         },
         isHDRSupported: function() {
-            try {
-                return window.matchMedia("(dynamic-range: high)").matches ? HDR_CAPABILITY.SUPPORTED : window.matchMedia("(color-gamut: p3)").matches ? HDR_CAPABILITY.WCG_DISPLAY_BUT_NO_HDR : HDR_CAPABILITY.NOT_SUPPORTED
-            } catch (e) {
-                return HDR_CAPABILITY.NOT_SUPPORTED
-            }
+            return true
+            // try {
+            //     return window.matchMedia("(dynamic-range: high)").matches ? HDR_CAPABILITY.SUPPORTED : window.matchMedia("(color-gamut: p3)").matches ? HDR_CAPABILITY.WCG_DISPLAY_BUT_NO_HDR : HDR_CAPABILITY.NOT_SUPPORTED
+            // } catch (e) {
+            //     return HDR_CAPABILITY.NOT_SUPPORTED
+            // }
         },
         isDolbyVisionSupported: function() {
-            return videoTool.isMediaSourceTypeSupported('video/mp4; codecs="dvhe"')
+            return true
+            // return videoTool.isMediaSourceTypeSupported('video/mp4; codecs="dvhe"')
         },
         isDolbyAtomsSupported: function(e) {
-            return videoTool.isMediaSourceTypeSupported('audio/mp4; codecs="ec-3"')
+            return true
+            // return videoTool.isMediaSourceTypeSupported('audio/mp4; codecs="ec-3"')
         },
         getMediaSource: function() {
             if ("undefined" != typeof window)
