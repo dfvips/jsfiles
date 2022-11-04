@@ -2671,15 +2671,15 @@
             t
         },
         supportAV1: function() {
-            return false;
+            return true;
             // return videoTool.isMediaSourceTypeSupported("video/mp4;codecs=av01.0.12M.08")
         },
         supportHevc: function() {
-            return false;
+            return true;
             // return videoTool.isMediaSourceTypeSupported('video/mp4;codecs="hev1.1.6.L120.90"')
         },
         supportHEVCMain10: function() {
-            return false;
+            return true;
             // return videoTool.isMediaSourceTypeSupported('video/mp4;codecs="hev1.2.4.L120.90"')
         },
         isVideoCanPlayType: function(e) {
