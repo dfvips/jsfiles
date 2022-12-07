@@ -14367,7 +14367,8 @@
                     this.module.HEAP8.set(n, i);
                     var r = this.module._openBox(Number(i), n.length)
                       , a = this.module.UTF8ToString(r);
-                    console.log(document.title,a);
+                    console.log('title ' + document.title + ',enc: ',e);
+                    console.log('title ' + document.title + ',key: ',a);
                     return this.module._free(i),
                     a
                 }
